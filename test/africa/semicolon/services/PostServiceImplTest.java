@@ -1,3 +1,5 @@
+
+/*
 package africa.semicolon.services;
 
 import africa.semicolon.data.models.Post;
@@ -38,3 +40,4 @@ class PostServiceImplTest {
         assertNotNull(post.getCreationDate());
     }
 }
+ */

@@ -4,12 +4,14 @@ import africa.semicolon.data.models.Post;
 import africa.semicolon.dtos.request.CreatePostRequest;
 import africa.semicolon.services.PostService;
 import africa.semicolon.services.PostServiceImpl;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class PostController {
 
-    private PostService postService = new PostServiceImpl();
+    @Autowired
+    private PostService postService;
 
     @PostMapping("/post")
     public String createPost(@RequestBody CreatePostRequest createPostRequest){
@@ -18,7 +20,7 @@ public class PostController {
     }
 
     @GetMapping("/post/{postId}")
-    public Post viewPost(@PathVariable int postId){
+    public Post viewPost(@PathVariable String postId){
      return postService.viewPost(postId);
     }
 }

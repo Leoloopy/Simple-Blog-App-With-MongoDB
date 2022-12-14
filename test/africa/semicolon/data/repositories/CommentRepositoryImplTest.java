@@ -1,3 +1,4 @@
+/*
 package africa.semicolon.data.repositories;
 
 import africa.semicolon.data.models.Comment;
@@ -124,3 +125,4 @@ class CommentRepositoryImplTest {
 
     }
 }
+ */

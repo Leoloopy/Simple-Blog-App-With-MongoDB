@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Data
 public class CreateCommentRequest {
-    private int postId;
+    private String postId;
     private String commenterName;
     private String comment;
 }
